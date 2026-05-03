@@ -1,0 +1,51 @@
+/* Element Selector */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+p{
+    font-family: Gill Sans;
+    font-size: larger;
+    color: whitesmoke;
+}
+
+body {
+  font-family: cursive;
+  background-color: #008b74;
+  font-size: medium;
+  color: bisque;
+  line-height: 2.5;
+  padding: 30px;
+
+}
+
+h1{
+    font-size:xx-large;
+    font-family: Gill Sans;
+    color: whitesmoke;
+    line-height: 4;
+margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+
+  /* Direction — which way do items flow? */
+  flex-direction: row;         /* left to right (default) */
+  flex-direction: column;      /* top to bottom */
+
+  /* Alignment along the MAIN axis */
+  justify-content: flex-start;    /* pack to the start (default) */
+  justify-content: center;        /* centre all items */
+  justify-content: space-between; /* equal gaps, no outer gap */
+  justify-content: space-evenly;  /* equal gaps everywhere */
+
+  /* Alignment along the CROSS axis */
+  align-items: stretch;    /* fill height (default) */
+  align-items: center;     /* centre vertically */
+  align-items: flex-start; /* align to top */
+
+  /* Wrap items onto a new line when they overflow */
+  flex-wrap: wrap;
+
+  /* Space between items */
+  gap: 8px;
+}
+
